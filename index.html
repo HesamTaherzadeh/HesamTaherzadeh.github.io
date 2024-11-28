@@ -22,7 +22,6 @@
   <meta property="og:site_name" content="Amirhesam Taherzadegan Portfolio" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@Amirhesam_T" />
   <meta name="twitter:title" content="Amirhesam Taherzadegan | Portfolio" />
   <meta name="twitter:description"
     content="Hi! My name is Amirhesam Taherzadegan. I am a photogrammetrist and computer vision developer passionate about SLAM, robotics, and 3D scene understanding. Explore my projects and skills." />
@@ -60,25 +59,25 @@
         <ul class="navbar-tabs-ul">
           <li class="home activeThistab" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="100">
             <a href="#home" tabindex="0" aria-label="Home menu button">
-              &#60;/Home&#62;
+              Personal::Home()
             </a>
           </li>
 
           <li class="about" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">
             <a href="#about" aria-label="about menu button">
-              &#60;/AboutMe&#62;
+              Personal::AboutMe()
             </a>
           </li>
 
           <li class="skills" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500">
             <a href="#skills" aria-label="skills menu button">
-              &#60;/Skills&#62;
+              Personal::Skills()
             </a>
           </li>
 
           <li class="projects" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
             <a href="#projects" aria-label="projects menu button">
-              &#60;/Projects&#62;
+              Personal::Project()
             </a>
           </li>
         </ul>
@@ -104,23 +103,23 @@
       <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
         <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab" onclick="hidemenubyli()">
           <a href="#home" tabindex="0" aria-label="Home menu button">
-            &#60;/Home&#62;
+            Personal::Home();
           </a>
         </li>
 
         <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">
           <a href="#about" tabindex="0" aria-label="about menu button">
-            &#60;/AboutMe&#62;
+            Personal::AboutMe()
           </a>
         </li>
         <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills" onclick="hidemenubyli()">
           <a href="#skills" tabindex="0" aria-label="skills menu button">
-            &#60;/Skills&#62;
+            Personal::AboutMe()
           </a>
         </li>
         <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
           <a href="#projects" tabindex="0" aria-label="projects menu button">
-            &#60;/Projects&#62;
+            Personal::AboutMe()
           </a>
         </li>
       </ul>
@@ -235,7 +234,7 @@
       <div class="about-section">
         <div class="section-heading">
           <h2 class="section-heading-article" tabindex="0" aria-label="About me heading">
-            &#60;/AboutMe&#62;
+            Personal::AboutMe();
           </h2>
         </div>
         <div class="info-dp-section">
@@ -261,7 +260,7 @@
       <div class="skills-section">
         <div class="section-heading" data-aos="fade-up">
           <h2 class="section-heading-article" tabindex="0" aria-label="skills heading">
-            &#60;/Skills&#62;
+           Personal::Skills()
           </h2>
           <p class="sectionHeadingP"></p>
         </div>
@@ -285,10 +284,40 @@
               <img src="./src/png/roslogo.png" alt="ROS skill" class="tech-stack-logo" />
               <span class="tooltip">ROS</span>
             </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/ros2.png" alt="ROS2 skill" class="tech-stack-logo" />
+              <span class="tooltip">ROS 2</span>
+            </li>
     
             <li class="tech-stack-box" data-aos="fade-up">
               <img src="./src/png/gitlogo.png" alt="Git skill" class="tech-stack-logo" />
               <span class="tooltip">Git</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/gazebo.png" alt="gazebo skill" class="tech-stack-logo" />
+              <span class="tooltip">gazebo</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/docker.png" alt="docker skill" class="tech-stack-logo" />
+              <span class="tooltip">Docker</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/PCL.png" alt="PCL skill" class="tech-stack-logo" />
+              <span class="tooltip">PCL</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/torch.webp" alt="torch skill" class="tech-stack-logo" />
+              <span class="tooltip">Pytorch</span>
+            </li>
+
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/svg/cuda.svg" alt="cuda skill" class="tech-stack-logo" />
+              <span class="tooltip">CUDA</span>
             </li>
   
           </ul>
@@ -297,7 +326,56 @@
     </section>
     
     <!-- skills section ends -->
-    <!--HESAM put projects here-->
+    <section class="projects-section-container" id="projects">
+      <div class="projects-section-div">
+        <div class="section-heading" data-aos="fade-up">
+          <h2 class="section-heading-article" tabindex="0" aria-label="My projects starts from here">
+            Personal::Projects()
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+        <div class="project-boxes-div">
+          <!-- First Project -->
+          <div data-aos="fade-up" class="project-box-wrapper">
+            <div class="project-box project-box2" id="project-box2">
+              <div class="info-div">
+                <img src="src/png/roslogo.png" alt="ROS logo for Online Mapping project" class="faviconforProject" />
+                <article class="ProjectHeading">Online Mapping</article>
+                <p class="ProjectDescription">
+                  ROS-Based Online Mapping: 
+                  Unleashing Sensor Fusion and RTK to Provide Real-Time, Seamless Maps with High Accuracy
+                </p>
+              </div>
+              <div class="image-div">
+                <img src="src/jpg/onlinemap.jpg" alt="Online Mapping project preview image" />
+              </div>
+            </div>
+          </div>
+          
+          <!-- Second Project -->
+          <div data-aos="fade-up" class="project-box-wrapper">
+            <div class="project-box project-box3" id="project-box3">
+              <div class="info-div">
+                <img src="src/png/cpplogo.png" alt="3D Reconstruction app icon" class="faviconforProject" />
+                <article class="ProjectHeading">3D Reconstruction App</article>
+                <p class="ProjectDescription">
+                  A 3D Reconstruction Application:  
+                  Built on Structure-from-Motion (SFM), capable of processing over 50 images. 
+                  The app is threaded and uses OpenGL and Qt for rendering and shading, offering a robust solution for visualizing detailed 3D models.
+                </p>
+              </div>
+              <div class="image-div">
+                <img src="src/png/threed.png" alt="3D Reconstruction project preview image" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    
+
   </main>
   <!-- main ends here -->
 
