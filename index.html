@@ -79,6 +79,13 @@
               Personal::Project()
             </a>
           </li>
+
+          <li class="downloadCV" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
+            <a href="src/pdf/UpdateNov.pdf" aria-label="downloadCV button">
+              Personal::downloadCV()
+            </a>
+          </li>
+
         </ul>
       </div>
       <!-- navbar tabs ends -->
@@ -113,14 +120,21 @@
         </li>
         <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills" onclick="hidemenubyli()">
           <a href="#skills" tabindex="0" aria-label="skills menu button">
-            Personal::AboutMe()
+            Personal::Skills()
           </a>
         </li>
         <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
           <a href="#projects" tabindex="0" aria-label="projects menu button">
-            Personal::AboutMe()
+            Personal::Project()
           </a>
         </li>
+
+        <li id="cv-mobile-tab" class="mobile-navbar-tabs-li cv">
+          <a href="src/pdf/UpdateNov.pdf" tabindex="0" aria-label="My CV button" download>
+            My CV
+          </a>
+        </li>
+
       </ul>
     </div>
     <!-- mobile toggle menu ends -->
@@ -203,7 +217,7 @@
           </div>
         </article>
         <p id="info-para" data-aos="fade-up" data-aos-delay="600">
-          I am a photogrammetrist and computer vision developer passionate about SLAM, robotics perception, and 3D scene understanding. I strive to push the boundaries of autonomous systems and spatial data analysis.
+          I am a 23 year old photogrammetrist and computer vision developer passionate about SLAM, robotics perception, and 3D scene understanding. I strive to push the boundaries of autonomous systems and spatial data analysis.
         </p>
         <div class="contact-btn-div" data-aos="fade-up" data-aos-delay="800">
           <a href="mailto:taherzadehesam@gmail.com" tabindex="-1">
@@ -237,6 +251,9 @@
           </h2>
         </div>
         <div class="info-dp-section">
+          <div class="about-image">
+            <img src="src/jpg/self.jpeg" alt="Amirhesam Taherzadegan" />
+          </div>
           <div class="about-info">
             <p tabindex="0">
               Hello! I’m Amirhesam Taherzadegan, a photogrammetrist and computer vision developer. I specialize in SLAM,
@@ -253,6 +270,8 @@
         </div>
       </div>
     </section>
+    
+    
     <!-- about section ends  -->
 
     <section class="skills-section-container" id="skills">
@@ -336,7 +355,7 @@
         <div class="project-boxes-div">
           <!-- First Project -->
           <div data-aos="fade-up" class="project-box-wrapper">
-            <div class="project-box project-box2" id="project-box2">
+            <div class="project-box project-box1" id="project-box1">
               <div class="info-div">
                 <img src="src/png/roslogo.png" alt="ROS logo for Online Mapping project" class="faviconforProject" />
                 <article class="ProjectHeading">Online Mapping</article>
@@ -350,10 +369,72 @@
               </div>
             </div>
           </div>
+
+          <div data-aos="fade-up" class="project-box-wrapper">
+            <div class="project-box project-box5" id="project-box5">
+              <!-- Information Section -->
+              <div class="info-div">
+                <img src="src/png/cpplogo.png" alt="Lane Departure Warning Logo" class="faviconforProject" />
+                <article class="ProjectHeading">Deep Lane Departure Warning System</article>
+                <p class="ProjectDescription">
+                  A lane departure warning system designed to alert drivers when their vehicle strays from its normal path. This helps to reduce crashes caused by lane drifting. 
+                  The project is implemented in C++ and Python, tested on Jetson Nano 2GB and Raspberry Pi 3B, with three distinct output modes. model converted to a .tflite binary file for inference on embedded systems.
+                </p>
+                <table style="width: 100%; border-collapse: collapse; background-color: #ffffff; border: 1px solid #ddd;">
+                  <thead>
+                    <tr style="background: repeating-linear-gradient(45deg, #8e44ad, #8e44ad 10px, #9b59b6 10px, #9b59b6 20px);">
+                      <th style="padding: 10px; text-align: left; border: 1px solid #ddd; color: white;">CPU</th>
+                      <th style="padding: 10px; text-align: left; border: 1px solid #ddd; color: white;">A57 (Jetson Nano)</th>
+                      <th style="padding: 10px; text-align: left; border: 1px solid #ddd; color: white;">A53 (Raspberry Pi 3B)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td style="padding: 10px; text-align: left; border: 1px solid #ddd;">FPS</td>
+                      <td style="padding: 10px; text-align: left; border: 1px solid #ddd;">14</td>
+                      <td style="padding: 10px; text-align: left; border: 1px solid #ddd;">5</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- Image Preview Section -->
+              <div class="image-div">
+                <img src="src/png/laneline.png" alt="Lane Detection Project Preview" />
+              </div>
+            </div>
+          </div>
           
+           <!-- Second Project -->
+      <div data-aos="fade-up" class="project-box-wrapper">
+        <div class="project-box project-box2" id="project-box2">
+          <!-- Information Section -->
+          <div class="info-div">
+            <!-- Logo for the project -->
+            <img src="src/png/cpplogo.png" alt="Embedded Project Logo" class="faviconforProject" />
+            <!-- Title of the Project -->
+            <article class="ProjectHeading">
+              GPS-enabled Visual Odometry on Raspberry Pi
+            </article>
+            <!-- Updated Project Description -->
+            <p class="ProjectDescription">
+              A Visual Odometry Application:  
+              Developed using the Strategy pattern to enable dynamic feature-matching techniques. 
+              Built in C++ with OpenCV and integrated with the NEO-6M GPS module, the app combines geolocation data with visual odometry. 
+              It provides efficient image processing and feature detection, ensuring robust performance for navigation and mapping tasks.
+            </p>
+            
+            
+          </div>
+          <!-- Image Preview Section -->
+          <div class="image-div">
+            <img src="src/jpg/embedded.jpg" alt="3D Reconstruction Project Preview Image" />
+          </div>
+        </div>
+      </div>
+      
           <!-- Second Project -->
           <div data-aos="fade-up" class="project-box-wrapper">
-            <div class="project-box project-box3" id="project-box3">
+            <div class="project-box project-box5" id="project-box5">
               <div class="info-div">
                 <img src="src/png/cpplogo.png" alt="3D Reconstruction app icon" class="faviconforProject" />
                 <article class="ProjectHeading">3D Reconstruction App</article>
@@ -370,6 +451,8 @@
           </div>
         </div>
       </div>
+
+      
     </section>
     
 
@@ -398,7 +481,7 @@
           </div>
           <div class="logos">
 
-            <a href="linkedin.com/in/hesam-taherzadegan" target="_blank"
+            <a href="https://linkedin.com/in/hesam-taherzadegan" target="_blank"
               aria-label="My Linkdin"><svg class="SocialHandle" viewBox="0 0 448 512">
                 <path
                   d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
