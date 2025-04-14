@@ -2092,3 +2092,90 @@ table {
       display: none;
     }
   }
+  .experience-section {
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--color-dark-mode);
+    color: var(--color-white);
+  }
+  
+  .carousel-container {
+    width: 70%;
+    max-width: 900px;
+    border: 2px solid var(--color-shadowDark);
+    border-radius: 30px;
+    padding: 40px;
+    position: relative;
+    background: linear-gradient(to bottom right, var(--tech-stack-box-first-color), var(--tech-stack-box-second-color));
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .carousel-slide {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .carousel-slide.active {
+    display: flex;
+  }
+  
+  .job-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .job-img {
+    width: 100px;            /* or more depending on how big you want it */
+    height: 100px;
+    object-fit: cover;       /* crops nicely */
+    border-radius: 10px;     /* <= THIS controls how round it looks */
+    margin-bottom: 10px;
+  }
+  
+  
+  .job-title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .job-title span {
+    font-size: 1.4rem;
+    color: var(--color-gray);
+  }
+  
+  .job-desc {
+    list-style: disc;
+    text-align: left;
+    margin-top: 10px;
+    padding-left: 20px;
+    font-size: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  .carousel-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 10px;
+  }
+  
+  .dot {
+    width: 12px;
+    height: 12px;
+    background-color: var(--color-gray);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .dot.active {
+    background-color: var(--color-purple);
+  }
+  
